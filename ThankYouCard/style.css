@@ -1,0 +1,65 @@
+	@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	background: #131417;
+	font-family:'Averia Sans Libre', Arial, sans-serif;
+	overflow: hidden;
+}
+.content {
+    height: 100vh;
+    width: 100vw;
+	background: radial-gradient(#673ab7 15%, #000000 100%);
+	text-align: center;
+	padding: 15vh;
+	box-sizing: border-box;
+}
+.thanks, .repositories {
+    font-size: 12vmin;
+    color: #673ab799;
+    text-align: center;
+    text-shadow: -0.25vmin 0.25vmin 0vmin #00000026;
+	position: absolute;
+    width: 100%;
+    left: 0;
+}
+.thanks {
+	animation: go-down 1s ease 0s 1;
+	top: 15vh;
+}
+.repositories {
+    bottom: 15vh;
+	animation: go-up 2s ease 0s 1;
+    text-shadow: -0.25vmin -0.25vmin 0vmin #00000026;
+}
+.number {
+    color: #ffffff;
+    font-size: 40vmin;
+    font-weight: bold;
+    line-height: 33vmin;
+    text-shadow: 0vmin 1vmin 0vmin #b5b5b5, -1vmin 2vmin 0 #333, 1vmin 2vmin 0 #333, -1vmin 2.5vmin 0 #333, 1vmin 2.5vmin 0 #333, 0.4vmin 2.55vmin 0 #333, -0.25vmin 2.55vmin 0 #333, -1vmin 3.55vmin 0 #222, -0.25vmin 3.55vmin 0 #222, 0.25vmin 3.55vmin 0 #222, 0.75vmin 3.55vmin 0 #222;
+    animation: go-front 2s linear 0s 1;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 20vmin);
+}
+@keyframes go-down {
+	  0% { top: -100vh; }
+	100% { top: 15vh; }
+}
+@keyframes go-up {
+	  0% { bottom: -100vh; }
+	 66% { bottom: -100vh; }
+	100% { bottom: 15vh; }
+}
+@keyframes go-front {
+	  0% { top: -100vh; }
+	 33% { top: -100vh; }
+	 66% { top: calc(50% - 20vmin); }
+	 68% { top: calc(50% - 22vmin); }
+	 70% { top: calc(50% - 20.5vmin); }
+	 72% { top: calc(50% - 21.25vmin); }
+	 73% { top: calc(50% - 20vmin); }
+	100% { top: calc(50% - 20vmin); }
+}
